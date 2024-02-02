@@ -1,0 +1,1 @@
+The following is a concise explanation of why the code failed the test: The code fails because it also compares elements to themselves. Thus, for any input, the answer will be False. This can be fixed by adding a condition to the inner loop that checks that the indices are not the same.

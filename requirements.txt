@@ -1,0 +1,7 @@
+tqdm
+openai==0.28
+vllm
+colorama
+numpy
+pebble
+pyext
