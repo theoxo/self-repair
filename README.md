@@ -12,6 +12,8 @@ Note that due to dependencies on an internal project, one function (`exec_sample
 All figures in the paper can be replicated by running `cd paper && make figures`. This will use pre-computed results of the data analysis, and will place the figures in `paper/figures/`.
 If you instead want to do all of the data analysis from scratch, run `APPS_DIR=<path to my APPS directory> cd paper && make all`; note that this requires having APPS installed locally.
 
+N.B.: This repository does not contain the data collected during the human study, due to IRB policies.
+
 ## Bibtex Citation
 ```
 @inproceedings{olausson2024repair,
