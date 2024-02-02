@@ -5,8 +5,6 @@ It contains source code used to run the experiments; the resulting data; as well
 
 To install the libraries needed to run the code and analysis scripts, you can use `pip install -r requirements.txt`.
 
-Note that due to dependencies on an internal project, one function (`exec_sample`) has been left unimplemented in `src/apps/apps.py`). If you want to make use of the APPS part of the source code, you must implement this function; see the doc-string.
-
 ## TL;DR: Replicating the Figures
 
 All figures in the paper can be replicated by running `cd paper && make figures`. This will use pre-computed results of the data analysis, and will place the figures in `paper/figures/`.
@@ -29,6 +27,12 @@ N.B.: This repository does not contain the data collected during the human study
 *Note: the below only applies if you want to use this code base to run new self-repair experiments on HumanEval yourself. You do not need to worry about this if you are merely interested in replicating the figures and results from this paper.*
 
 This code base uses a modified version of HumanEval, in which it is easier to extract error messages from failed assertions. This can be downloaded from [people.csail.mit.edu/theoxo/data/HumanEval_with_assertion_messages.jsonl.gz.gpg](https://people.csail.mit.edu/theoxo/data/HumanEval_with_assertion_messages.jsonl.gz.gpg); you can then decrypt it with `gpg -d` using the password `theoxoiclr2024` and unpack it with `gunzip`, after which it can be used as a drop-in replacement for `HumanEval.jsonl` in your local installation of HumanEval.
+
+## A Note on APPS
+
+*Note: the below only applies if you want to use this code base to run new self-repair experiments on APPS yourself. You do not need to worry about this if you are merely interested in replicating the figures and results from this paper.*
+
+Due to dependencies on an internal project, one function (`exec_sample`) has been left unimplemented in `src/apps/apps.py`. If you want to make use of the APPS part of the source code, you must implement this function; see the doc-string for pointers.
 
 ## Repository Structure
 - `src/`: source code used to run the experiments.
@@ -56,4 +60,4 @@ The data contains the following fields:
     - `errors`: a list of execution results for each unit test, in order (APPS only)
     - `repairs`: if the completion passed, `null`. Otherwise, a list of items much like the completions, except also equipped with an `explanation` field (which, in the case of modelX+modelY results, is generated separately by modelX). Note that for repairs, `tokens_generated` counts both the program and the explanation (all text preceding it).
 
-In addition to these tarballs, there are also additional tarballs with the `-raw` postfix. These are identical to the above, but also contain some auxiliary fields which are irrelevant for the final analysis but where used during debugging and running these large experiments. Any auxiliary fields present in tarballs should be considered legacy and possibly inaccurate.
+In addition to these tarballs, there are also additional tarballs with the `-raw` postfix. These are identical to the above, but also contain some auxiliary fields which are irrelevant for the final analysis but where used during debugging and running these large experiments. Any auxiliary fields present in these raw tarballs should be considered legacy and possibly inaccurate.
