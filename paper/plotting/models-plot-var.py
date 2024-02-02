@@ -175,8 +175,8 @@ if args.mode == 'pass@t':
     ax.set_xlim(0.0, args.xmax)
 if args.mode == 'pass@k' or args.mode == 'pass@k-simple':
     ax.set_xlim(0.0, 50)
-# set x axis ticks to 10, 20, 30, 40, 50
-ax.set_xticks([10, 20, 30, 40, 50])
+    # set x axis ticks to 10, 20, 30, 40, 50
+    ax.set_xticks([10, 20, 30, 40, 50])
 # set y axis ticks to 0.2, 0.4, 0.6, 0.8, 1.0
 ax.set_yticks([0.2, 0.4, 0.6, 0.8, 1.0])
 ax.grid(True)
