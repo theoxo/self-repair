@@ -16,7 +16,7 @@ N.B.: This repository does not contain the data collected during the human study
 ```
 @inproceedings{olausson2024repair,
 	title        = {Is Self-Repair a Silver Bullet for Code Generation?},
-	author       = {Theo Olausson and Jeevana Priya Inala and Chenglong Wang and Jianfeng Gao and Armando Solar-Lezama},
+	author       = {Theo X. Olausson and Jeevana Priya Inala and Chenglong Wang and Jianfeng Gao and Armando Solar-Lezama},
 	year         = 2024,
 	booktitle    = {International Conference on Learning Representations (ICLR)}
 }
