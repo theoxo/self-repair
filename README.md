@@ -1,6 +1,6 @@
 # [ICLR 2024]: Is Self-Repair a Silver Bullet for Code Generation?
 
-This is is the accompanying repository for the paper [Is Self-Repair a Silver Bullet for Code Generation](https://openreview.net/forum?id=y0GJXRungR), presented at the [Twelfth International Conference on Learning Representations](https://iclr.cc/Conferences/2024) (Vienna, May 2024).
+This is is the accompanying repository for the paper [Is Self-Repair a Silver Bullet for Code Generation?](https://openreview.net/forum?id=y0GJXRungR), presented at the [Twelfth International Conference on Learning Representations](https://iclr.cc/Conferences/2024) (Vienna, May 2024).
 It contains source code used to run the experiments; the resulting data; as well as scripts to replicate the data analysis and figures from the paper.
 
 To install the libraries needed to run the code and analysis scripts, you can use `pip install -r requirements.txt`.
